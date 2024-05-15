@@ -1,0 +1,64 @@
+
+@media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    width: 250px;
+    height:250px;
+    position: sticky;
+  }
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+  }
+  .card-container-text{
+    max-width: 500px;
+    font-family: Albert Sans;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+        .title{
+            font-size: 80px;
+        }
+        .context{
+            font-size: 20px;
+        }
+  }
+  h2{
+    font-family: Albert Sans
+  }
