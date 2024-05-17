@@ -1,6 +1,20 @@
 
 @media screen and (max-width: 1366px) {
-    .btn {
+  .logo{
+    width: 300px !important;
+    height: 93px !important;
+  }
+  .card-container-text{
+    .title{
+      width: 100% !important;
+      font-size: 60px !important;
+    }
+    .context{
+      width: 100% !important;
+      font-size: 20px !important;
+    }
+}
+  .btn {
       min-width: 170px;
     }
     .conclusão{
@@ -29,6 +43,17 @@
   }
 
   @media screen and (max-width: 705px) {
+    .logo{
+      width: 250px !important;
+      height: 78px !important;
+    }
+    
+    .title{
+      position: relative;
+      width: 100%;
+      text-align: left;
+      font-size: 30px;
+    }
     .conclusão{
       flex-wrap: wrap;
       p{
@@ -38,14 +63,14 @@
       
     }
         .aurichio-img{
-          width: 350px !important;
-          height: 350px !important;
+          width: 400px !important;
+          height: 400px !important;
         }
     }
     .card-container-text{
           .title{
             width: 100% !important;
-            font-size: 50px !important;
+            font-size: 40px !important;
           }
           .context{
             width: 100% !important;
@@ -59,10 +84,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
   }
   .logo{
-    width: 250px;
-    height:250px;
+    width: 400px;
+    height:124px;
     position: sticky;
   }
   .content{
@@ -71,7 +97,6 @@
     display: flex;
     flex-direction: column;
     gap:50px ;
-    margin-top:30px ;
   }
 
   .cards{
@@ -143,6 +168,7 @@
     align-items: flex-start;
     text-align: center;
     color: #fff;
+    gap:15px;
         .title{
           position: relative;
           width: 100%;
@@ -168,7 +194,8 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
-    margin-top: 60px;
+    margin-top: 220px;
+    margin-bottom: 220px;
     font-size: 20px;
     font-weight: bold;  
       .information-title{
@@ -203,6 +230,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 60px;
+    
     font-size: 20px; 
       p{
         
@@ -216,6 +244,18 @@
         height: 700px;
         filter: drop-shadow(0 0 0.75rem #00b6ff);
       }
+      .btn{
+        margin-top: 50px;
+      }
+      .conclusão-text{
+        display: flex;
+        gap: 5px;
+        padding: 15px;
+        max-width: 700px;
+        flex-wrap: wrap;
+
+      }
+
   }
   .whatsapp{
     // position: -webkit-sticky;
@@ -275,4 +315,80 @@
   align-items: center;
   display: flex;
   position: relative;
+}
+.certificado{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  gap: 15px;
+
+  .card-certificado{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    background: rgba(0,0,0,0);
+    padding: 20px;
+    min-width: 140px;
+    width: 260px;
+    font-size: 20px;
+    font-weight: 600;
+      .certificado-image{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 6px;
+      }
+  }
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 35px;
+  padding: 60px;
+  
+
+}
+.footer-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(0,0,0,0);
+  padding: 20px;
+  min-width: 140px;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 25px;
+
+}
+.footer-text{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+
+    a{
+      color: #000;
+      cursor: pointer;
+      text-decoration: none;
+      a:hover {
+        border-color: #06f;
+        color: #06f;
+        fill: #06f;
+      }
+    }
+
 }
